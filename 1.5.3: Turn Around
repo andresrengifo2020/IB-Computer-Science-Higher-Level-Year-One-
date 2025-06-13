@@ -1,0 +1,15 @@
+public class TurnAroundKarel extends Karel
+{
+    
+    public void run()
+    {
+        move();
+        turnAround();
+    }
+    
+    private void turnAround()
+    {
+        turnLeft();
+        turnLeft();
+    }
+}
