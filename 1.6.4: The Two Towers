@@ -1,0 +1,60 @@
+public class TwoTowersKarel extends Karel
+{
+
+	public void run()
+	{
+        move();
+        buildTower();
+        comeDown();
+        move();
+        move();
+        buildTower();
+        move();
+        turnRight();
+	}
+    /**
+     * Turns Karel Right
+     */ 
+    private void turnRight()
+    {
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+
+    /**
+     * Turns Karel to face the opposite direction
+     */ 
+    private void turnAround()
+    {
+        turnLeft();
+        turnLeft();
+    }
+    
+    /**
+     * Makes Karel come down from the top of the tower
+     * to the bottom of the tower.
+     * Karel ends facing east.
+     */ 
+    private void comeDown()
+    {
+        turnAround();
+        move();
+        move();
+        turnLeft();
+    }
+    
+    /**
+     * Has Karel build a three ball tower.
+     * Karel ends facing North
+     */ 
+    private void buildTower()
+    {
+        turnLeft();
+        putBall();
+        move();
+        putBall();
+        move();
+        putBall();
+    }
+}
