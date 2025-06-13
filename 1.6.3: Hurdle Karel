@@ -1,0 +1,45 @@
+public class HurdleKarel extends Karel
+{
+
+	public void run()
+	{
+		runToHurdle();
+		jumpHurdle();
+		runToHurdle();
+		jumpHurdle();
+		runToFinish();
+	}
+
+	private void runToFinish()
+	{
+		move();
+		move();
+		move();
+		move();
+	}
+
+	private void runToHurdle()
+	{
+		move();
+		move();
+		move();
+	}
+
+	private void jumpHurdle()
+	{
+		turnLeft();
+		move();
+		turnRight();
+		move();
+		turnRight();
+		move();
+		turnLeft();
+	}
+
+	private void turnRight()
+	{
+		turnLeft();
+		turnLeft();
+		turnLeft();
+	}
+}
