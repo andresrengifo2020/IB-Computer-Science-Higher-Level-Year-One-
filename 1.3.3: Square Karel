@@ -1,0 +1,22 @@
+public class SquareKarel extends Karel
+{
+
+    public void run()
+    {
+        putBall();
+        move();
+        turnLeft();
+        
+        putBall();
+        move();
+        turnLeft();
+        
+        putBall();
+        move();
+        turnLeft();
+        
+        putBall();
+        move();
+        turnLeft();	
+    }
+}
